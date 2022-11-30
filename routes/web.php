@@ -69,7 +69,7 @@ Route::get('/vendor/login', [VendorController::class,'VendorLogin'])->name('vend
 
 //FrontEnd
 
-// Route::get('/', [FrontendController::class,'FrontendDashboard'])->name('frontend.dahboard');
+Route::get('/', [FrontendController::class,'FrontendHome'])->name('frontend.home');
 // Route::get('/login', [FrontendController::class,'LoginFrontend'])->name('login.frontend');
 
 

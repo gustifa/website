@@ -20,7 +20,7 @@ class VendorController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('/');
+        return redirect('/vendor/login');
     }
 
     public function VendorLogin(){

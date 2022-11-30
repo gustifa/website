@@ -46,11 +46,11 @@ class UsersTableSeeder extends Seeder
             ],
             //siswa
             [
-                'name' => 'siswa',
-                'username' => 'siswa',
-                'email' => 'siswa@gmail.com',
+                'name' => 'vendor',
+                'username' => 'vendor',
+                'email' => 'vendor@gmail.com',
                 'password' => Hash::make('111'),
-                'role' => 'siswa',
+                'role' => 'vendor',
                 'status' => 'active',
             ],
 

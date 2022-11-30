@@ -7,6 +7,7 @@ use App\Http\Controllers\VendorController;
 use App\Http\Controllers\SekolahController;
 use App\Http\Controllers\PresensiController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\FrontendController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,13 +20,13 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -56,11 +57,20 @@ Route::middleware(['auth','role:admin'])->group(function(){
 
 });
 
-Route::middleware(['auth','role:user'])->group(function(){
-    Route::get('/user/dashboard', [VendorController::class,'VendorDashboard'])->name('vendor.dashboard');
+//Vendor
+
+Route::middleware(['auth','role:vendor'])->group(function(){
+    Route::get('/vendor/dashboard', [VendorController::class,'VendorDashboard'])->name('vendor.dashboard');
+    Route::get('/vendor/logout', [VendorController::class,'VendorDestroy'])->name('vendor.logout');
 });
 
 Route::get('/admin/login', [AdminController::class,'AdminLogin'])->name('admin.login');
+Route::get('/vendor/login', [VendorController::class,'VendorLogin'])->name('vendor.login');
+
+//FrontEnd
+
+Route::get('/', [FrontendController::class,'FrontendDashboard'])->name('frontend.dahboard');
+Route::get('/login', [FrontendController::class,'LoginFrontend'])->name('login.frontend');
 
 
 

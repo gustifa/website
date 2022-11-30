@@ -20,9 +20,9 @@ use App\Http\Controllers\FrontendController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('frontend.index');
+});
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
@@ -69,8 +69,8 @@ Route::get('/vendor/login', [VendorController::class,'VendorLogin'])->name('vend
 
 //FrontEnd
 
-Route::get('/', [FrontendController::class,'FrontendDashboard'])->name('frontend.dahboard');
-Route::get('/login', [FrontendController::class,'LoginFrontend'])->name('login.frontend');
+// Route::get('/', [FrontendController::class,'FrontendDashboard'])->name('frontend.dahboard');
+// Route::get('/login', [FrontendController::class,'LoginFrontend'])->name('login.frontend');
 
 
 

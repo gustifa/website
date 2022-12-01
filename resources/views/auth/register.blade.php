@@ -1,132 +1,165 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html class="no-js" lang="en">
 
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--favicon-->
-	<link rel="icon" href="{{asset('adminbackend/assets/images/favicon-32x32.png')}}" type="image/png" />
-	<!--plugins-->
-	<link href="{{asset('adminbackend/assets/plugins/simplebar/css/simplebar.css')}}" rel="stylesheet" />
-	<link href="{{asset('adminbackend/assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css')}}" rel="stylesheet" />
-	<link href="{{asset('adminbackend/assets/plugins/metismenu/css/metisMenu.min.css')}}" rel="stylesheet" />
-	<!-- loader-->
-	<link href="{{asset('adminbackend/assets/css/pace.min.css')}}" rel="stylesheet" />
-	<script src="{{asset('adminbackend/assets/js/pace.min.js')}}"></script>
-	<!-- Bootstrap CSS -->
-	<link href="{{asset('adminbackend/assets/css/bootstrap.min.css')}}" rel="stylesheet">
-	<link href="{{asset('adminbackend/assets/css/app.css')}}" rel="stylesheet">
-	<link href="{{asset('adminbackend/assets/css/icons.css')}}" rel="stylesheet">
-	<title>Register</title>
+    <meta charset="utf-8" />
+    <title>Nest - Multipurpose eCommerce HTML Template</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('frontend/assets/imgs/theme/favicon.svg')}}" />
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="{{asset('frontend/assets/css/main.css?v=5.3')}}" />
 </head>
 
-<body class="bg-login">
-	<!--wrapper-->
-	<div class="wrapper">
-		<div class="d-flex align-items-center justify-content-center my-5 my-lg-0">
-			<div class="container">
-				<div class="row row-cols-1 row-cols-lg-2 row-cols-xl-2">
-					<div class="col mx-auto">
-						<div class="my-4 text-center">
-							<img src="{{asset('adminbackend/assets/images/logo-img.png')}}" width="180" alt="" />
-						</div>
-						<div class="card">
-							<div class="card-body">
-								<div class="border p-4 rounded">
-									<div class="text-center">
-										<h3 class="">Sign Up</h3>
-										<p>Already have an account? <a href="{{ route('login') }}">Sign in here</a>
-										</p>
-									</div>
-									<div class="d-grid">
-										<a class="btn my-4 shadow-sm btn-white" href="javascript:;"> <span class="d-flex justify-content-center align-items-center">
-                          <img class="me-2" src="{{asset('adminbackend/assets/images/icons/search.svg')}}" width="16" alt="Image Description">
-                          <span>Sign Up with Google</span>
-											</span>
-										</a> <a href="javascript:;" class="btn btn-facebook"><i class="bx bxl-facebook"></i>Sign Up with Facebook</a>
-									</div>
-									<div class="login-separater text-center mb-4"> <span>OR SIGN UP WITH EMAIL</span>
-										<hr/>
-									</div>
-									<div class="form-body">
-										<form class="row g-3">
-											<div class="col-sm-6">
-												<label for="inputFirstName" class="form-label">First Name</label>
-												<input type="email" class="form-control" id="inputFirstName" placeholder="Jhon">
-											</div>
-											<div class="col-sm-6">
-												<label for="inputLastName" class="form-label">Last Name</label>
-												<input type="email" class="form-control" id="inputLastName" placeholder="Deo">
-											</div>
-											<div class="col-12">
-												<label for="inputEmailAddress" class="form-label">Email Address</label>
-												<input type="email" class="form-control" id="inputEmailAddress" placeholder="example@user.com">
-											</div>
-											<div class="col-12">
-												<label for="inputChoosePassword" class="form-label">Password</label>
-												<div class="input-group" id="show_hide_password">
-													<input type="password" class="form-control border-end-0" id="inputChoosePassword" value="12345678" placeholder="Enter Password"> <a href="javascript:;" class="input-group-text bg-transparent"><i class='bx bx-hide'></i></a>
-												</div>
-											</div>
-											<div class="col-12">
-												<label for="inputSelectCountry" class="form-label">Country</label>
-												<select class="form-select" id="inputSelectCountry" aria-label="Default select example">
-													<option selected>India</option>
-													<option value="1">United Kingdom</option>
-													<option value="2">America</option>
-													<option value="3">Dubai</option>
-												</select>
-											</div>
-											<div class="col-12">
-												<div class="form-check form-switch">
-													<input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
-													<label class="form-check-label" for="flexSwitchCheckChecked">I read and agree to Terms & Conditions</label>
-												</div>
-											</div>
-											<div class="col-12">
-												<div class="d-grid">
-													<button type="submit" class="btn btn-primary"><i class='bx bx-user'></i>Sign up</button>
-												</div>
-											</div>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--end row-->
-			</div>
-		</div>
-	</div>
-	<!--end wrapper-->
-	<!-- Bootstrap JS -->
-	<script src="{{asset('adminbackend/assets/js/bootstrap.bundle.min.js')}}"></script>
-	<!--plugins-->
-	<script src="{{asset('adminbackend/assets/js/jquery.min.js')}}"></script>
-	<script src="{{asset('adminbackend/assets/plugins/simplebar/js/simplebar.min.js')}}"></script>
-	<script src="{{asset('adminbackend/assets/plugins/metismenu/js/metisMenu.min.js')}}"></script>
-	<script src="{{asset('adminbackend/assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js')}}"></script>
-	<!--Password show & hide js -->
-	<script>
-		$(document).ready(function () {
-			$("#show_hide_password a").on('click', function (event) {
-				event.preventDefault();
-				if ($('#show_hide_password input').attr("type") == "text") {
-					$('#show_hide_password input').attr('type', 'password');
-					$('#show_hide_password i').addClass("bx-hide");
-					$('#show_hide_password i').removeClass("bx-show");
-				} else if ($('#show_hide_password input').attr("type") == "password") {
-					$('#show_hide_password input').attr('type', 'text');
-					$('#show_hide_password i').removeClass("bx-hide");
-					$('#show_hide_password i').addClass("bx-show");
-				}
-			});
-		});
-	</script>
-	<!--app JS-->
-	<script src="{{asset('adminbackend/assets/js/app.js')}}"></script>
+<body>
+    
+    <!-- Quick view -->
+    @include('frontend.body.quick_view')
+    <!-- Header  -->
+	@include('frontend.body.header')
+
+   <!-- End Header  -->
+
+
+
+
+   @include('frontend.body.header_mobile')
+    <!--End header-->
+
+    <main class="main pages">
+        <div class="page-header breadcrumb-wrap">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
+                    <span></span> Pages <span></span> My Account
+                </div>
+            </div>
+        </div>
+        <div class="page-content pt-150 pb-150">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-10 col-md-12 m-auto">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-8">
+                                <div class="login_wrap widget-taber-content background-white">
+                                    <div class="padding_eight_all bg-white">
+                                        <div class="heading_s1">
+                                            <h1 class="mb-5">Create an Account</h1>
+                                            <p class="mb-30">Already have an account? <a href="page-login.html">Login</a></p>
+                                        </div>
+                                        <form method="post">
+                                            <div class="form-group">
+                                                <input type="text" required="" name="username" placeholder="Username" />
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" required="" name="email" placeholder="Email" />
+                                            </div>
+                                            <div class="form-group">
+                                                <input required="" type="password" name="password" placeholder="Password" />
+                                            </div>
+                                            <div class="form-group">
+                                                <input required="" type="password" name="password" placeholder="Confirm password" />
+                                            </div>
+                                            <div class="login_footer form-group">
+                                                <div class="chek-form">
+                                                    <input type="text" required="" name="email" placeholder="Security code *" />
+                                                </div>
+                                                <span class="security-code">
+                                                    <b class="text-new">8</b>
+                                                    <b class="text-hot">6</b>
+                                                    <b class="text-sale">7</b>
+                                                    <b class="text-best">5</b>
+                                                </span>
+                                            </div>
+                                            <div class="payment_option mb-50">
+                                                <div class="custome-radio">
+                                                    <input class="form-check-input" required="" type="radio" name="payment_option" id="exampleRadios3" checked="" />
+                                                    <label class="form-check-label" for="exampleRadios3" data-bs-toggle="collapse" data-target="#bankTranfer" aria-controls="bankTranfer">I am a customer</label>
+                                                </div>
+                                                <div class="custome-radio">
+                                                    <input class="form-check-input" required="" type="radio" name="payment_option" id="exampleRadios4" checked="" />
+                                                    <label class="form-check-label" for="exampleRadios4" data-bs-toggle="collapse" data-target="#checkPayment" aria-controls="checkPayment">I am a vendor</label>
+                                                </div>
+                                            </div>
+                                            <div class="login_footer form-group mb-50">
+                                                <div class="chek-form">
+                                                    <div class="custome-checkbox">
+                                                        <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox12" value="" />
+                                                        <label class="form-check-label" for="exampleCheckbox12"><span>I agree to terms &amp; Policy.</span></label>
+                                                    </div>
+                                                </div>
+                                                <a href="page-privacy-policy.html"><i class="fi-rs-book-alt mr-5 text-muted"></i>Lean more</a>
+                                            </div>
+                                            <div class="form-group mb-30">
+                                                <button type="submit" class="btn btn-fill-out btn-block hover-up font-weight-bold" name="login">Submit &amp; Register</button>
+                                            </div>
+                                            <p class="font-xs text-muted"><strong>Note:</strong>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy</p>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 pr-30 d-none d-lg-block">
+                                <div class="card-login mt-115">
+                                    <a href="#" class="social-login facebook-login">
+                                        <img src="assets/imgs/theme/icons/logo-facebook.svg" alt="" />
+                                        <span>Continue with Facebook</span>
+                                    </a>
+                                    <a href="#" class="social-login google-login">
+                                        <img src="assets/imgs/theme/icons/logo-google.svg" alt="" />
+                                        <span>Continue with Google</span>
+                                    </a>
+                                    <a href="#" class="social-login apple-login">
+                                        <img src="assets/imgs/theme/icons/logo-apple.svg" alt="" />
+                                        <span>Continue with Apple</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    @include('frontend.body.footer')
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="text-center">
+                    <img src="{{asset('frontend/assets/imgs/theme/loading.gif')}}" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vendor JS-->
+    <script src="{{asset('frontend/assets/js/vendor/modernizr-3.6.0.min.js')}}"></script>
+    <script src="{{asset('frontend/assets/js/vendor/jquery-3.6.0.min.js')}}"></script>
+    <script src="{{asset('frontend/assets/js/vendor/jquery-migrate-3.3.0.min.js')}}"></script>
+    <script src="{{asset('frontend/assets/js/vendor/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('frontend/assets/js/plugins/slick.js')}}"></script>
+    <script src="{{asset('frontend/assets/js/plugins/jquery.syotimer.min.js')}}"></script>
+    <script src="{{asset('frontend/assets/js/plugins/waypoints.js')}}"></script>
+    <script src="{{asset('frontend/assets/js/plugins/wow.js')}}"></script>
+    <script src="{{asset('frontend/assets/js/plugins/perfect-scrollbar.js')}}"></script>
+    <script src="{{asset('frontend/assets/js/plugins/magnific-popup.js')}}"></script>
+    <script src="{{asset('frontend/assets/js/plugins/select2.min.js')}}"></script>
+    <script src="{{asset('frontend/assets/js/plugins/counterup.js')}}"></script>
+    <script src="{{asset('frontend/assets/js/plugins/jquery.countdown.min.js')}}"></script>
+    <script src="{{asset('frontend/assets/js/plugins/images-loaded.js')}}"></script>
+    <script src="{{asset('frontend/assets/js/plugins/isotope.js')}}"></script>
+    <script src="{{asset('frontend/assets/js/plugins/scrollup.js')}}"></script>
+    <script src="{{asset('frontend/assets/js/plugins/jquery.vticker-min.js')}}"></script>
+    <script src="{{asset('frontend/assets/js/plugins/jquery.theia.sticky.js')}}"></script>
+    <script src="{{asset('frontend/assets/js/plugins/jquery.elevatezoom.js')}}"></script>
+    <!-- Template  JS -->
+    <script src="{{asset('frontend/assets/js/main.js?v=5.3')}}"></script>
+    <script src="{{asset('frontend/assets/js/shop.js?v=5.3')}}"></script>
 </body>
 
 </html>
